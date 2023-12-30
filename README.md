@@ -36,6 +36,7 @@ se usara el crate de serde.
 ### Pasos para agregar una API
 
 Estos pasos son después de terminar la configuración
+`A partir del commit - Add course state`
 
 1. Definir la configuración de las rutas (routes.rs)
 2. Agregar la función manejadora (handlers.rs)
