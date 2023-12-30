@@ -1,11 +1,14 @@
 [package]
-name = "rustful-api"
+name = "tutor-nodb"
 version = "0.1.0"
 edition = "2021"
+default-run = "tutor-service"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[workspace]
-members = ["tutor-nodb"]
+[[bin]]
+name = "tutor-service"
 
 [dependencies]
+actix-rt = "2.9.0"
+actix-web = "4.4.1"
