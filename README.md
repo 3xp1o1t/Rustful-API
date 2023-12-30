@@ -6,6 +6,7 @@
   - [Tabla de contenidos](#tabla-de-contenidos)
   - [Acerca de](#acerca-de)
     - [Modelo de datos Cursos](#modelo-de-datos-cursos)
+    - [Pasos para agregar una API](#pasos-para-agregar-una-api)
   - [Estructura](#estructura)
   - [Requisitos](#requisitos)
   - [Installing](#installing)
@@ -31,6 +32,15 @@ Para la creación de cada curso se debe especificar el id del tutor y el nombre 
 Posted time es generado con un crate externo (chrono).
 Para serializar y deserializar las estructuras de datos de Rust al formato _on-the-wire_ y viceversa
 se usara el crate de serde.
+
+### Pasos para agregar una API
+
+Estos pasos son después de terminar la configuración
+
+1. Definir la configuración de las rutas (routes.rs)
+2. Agregar la función manejadora (handlers.rs)
+3. Agregar las pruebas (handlers.rs -> EOF)
+4. Agregar el servicio y probar el API
 
 ## Estructura
 
