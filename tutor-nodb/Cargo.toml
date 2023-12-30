@@ -12,3 +12,5 @@ name = "tutor-service"
 [dependencies]
 actix-rt = "2.9.0"
 actix-web = "4.4.1"
+chrono = { version = "0.4.31", features = ["serde"] }
+serde = { version = "1.0.193", features = ["derive"] }

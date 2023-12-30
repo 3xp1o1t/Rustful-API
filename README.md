@@ -5,6 +5,7 @@
 - [Rust RESTful API usando Actix web framework](#rust-restful-api-usando-actix-web-framework)
   - [Tabla de contenidos](#tabla-de-contenidos)
   - [Acerca de](#acerca-de)
+    - [Modelo de datos Cursos](#modelo-de-datos-cursos)
   - [Estructura](#estructura)
   - [Requisitos](#requisitos)
   - [Installing](#installing)
@@ -18,6 +19,18 @@ La funcionalidad principal de esta API es:
 1. Publicar un nuevo curso. `POST /courses`
 2. Obtener la lista de cursos del tutor. `GET /courses/tutor_id`
 3. Obtener detalles de un curso individual. `GET /courses/tutor_id/course_id`
+
+### Modelo de datos Cursos
+
+- Tutor id
+- Course id
+- Course name
+- Posted time
+
+Para la creación de cada curso se debe especificar el id del tutor y el nombre del curso.
+Posted time es generado con un crate externo (chrono).
+Para serializar y deserializar las estructuras de datos de Rust al formato _on-the-wire_ y viceversa
+se usara el crate de serde.
 
 ## Estructura
 
